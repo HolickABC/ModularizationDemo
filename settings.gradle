@@ -1,0 +1,1 @@
+include ':app_specific', ':app_universal', ':lib_core', ':lib_common', ':module_girl', ':module_news'

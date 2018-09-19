@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiongch.module_news">
+    <application>
+        <meta-data
+            android:name="com.xiongch.module_news.NewsApplication"
+            android:value="IModuleConfig" />
+
+        <activity android:name=".ui.NewsActivity"/>
+    </application>
+</manifest>
