@@ -11,8 +11,8 @@ isModule=true
 # Developed by
 
 ```
-    - 1. Kotlin
-    2. DataBinding
+- 1. Kotlin
+- 2. DataBinding
     3. LiveData
     4. ViewModel
     5. LifeCycle
