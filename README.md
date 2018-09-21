@@ -2,5 +2,8 @@
 Modularization demo developed by MVVM dagger2 RxJava2
 
 ```
-exchange module by 
+switch module by change the value of isModule from gradle.properties
+
+isModule=true
+
 ```
