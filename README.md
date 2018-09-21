@@ -7,3 +7,5 @@ switch module by change the value of isModule from gradle.properties
 isModule=true
 
 ```
+
+# Developed by
