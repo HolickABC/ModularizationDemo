@@ -4,7 +4,7 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
 import com.alibaba.android.arouter.launcher.ARouter
-import com.xiongch.lib_common.base.ARouterPath
+import com.xiongch.lib_common.navigator.ARouterPath
 import com.xiongch.lib_common.base.BaseActivity
 import com.xiongch.specific.R
 import com.xiongch.specific.databinding.ActivityMainBinding

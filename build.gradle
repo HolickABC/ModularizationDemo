@@ -1,4 +1,6 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+//key store password : 123456
+//alias : keystore
+//key_password: 123456
 
 buildscript {
     apply from: 'versions.gradle'

@@ -39,6 +39,44 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    api project(':lib_core')
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    testApi deps.junit
+    androidTestApi deps.runner
+    androidTestApi deps.espresso
+
+    api deps.kotlin.stdlib
+
+    api deps.constaint_layout
+
+    //Support
+    api deps.support.app_compat
+    api deps.support.v4
+    api deps.support.design
+    api deps.support.cardview
+    api deps.support.recyclerview
+
+    //Architecture components
+    api deps.lifecycle.runtime
+    api deps.lifecycle.extensions
+    kapt deps.lifecycle.compiler
+
+    //http
+    api deps.retrofit.runtime
+    api deps.retrofit.gson
+    api deps.retrofit.adapter_rxjava2
+    api deps.okhttp.okhttp3
+    api deps.okhttp.okhttp3_logging_interceptor
+    api deps.rxjava2
+    api deps.rx_android
+
+    //Dagger2
+    api deps.dagger2.runtime
+    kapt deps.dagger2.compiler
+
+    //router
+    api deps.arouter.runtime
+
+    //Other
+    api deps.multidex
+    api deps.immersionbar
 }

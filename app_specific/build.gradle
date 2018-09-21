@@ -49,9 +49,9 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     kapt deps.arouter.compiler
+    kapt deps.dagger2.compiler
     if (isModule.toBoolean()) {
         implementation project(':lib_common')
-        implementation project(':lib_core')
     } else {
         implementation project(':module_girl')
         implementation project(':module_news')

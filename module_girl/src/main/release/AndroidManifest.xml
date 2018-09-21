@@ -1,10 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.xiongch.module_girl">
+    package="com.xiongch.girl">
     <application>
         <meta-data
-            android:name="com.xiongch.module_girl.GirlsApplication"
+            android:name="com.xiongch.girl.GirlsApplication"
             android:value="IModuleConfig" />
 
-        <activity android:name=".ui.GirlActivity"/>
+        <activity android:name="com.xiongch.girl.ui.GirlActivity"/>
     </application>
 </manifest>

@@ -9,7 +9,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.GirlFragment">
+        tools:context="com.xiongch.girl.ui.GirlFragment">
 
         <TextView
             android:layout_width="wrap_content"

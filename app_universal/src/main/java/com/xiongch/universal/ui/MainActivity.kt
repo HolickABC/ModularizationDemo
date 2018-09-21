@@ -5,7 +5,7 @@ import android.util.Log
 import com.alibaba.android.arouter.facade.Postcard
 import com.alibaba.android.arouter.facade.callback.NavigationCallback
 import com.alibaba.android.arouter.launcher.ARouter
-import com.xiongch.lib_common.base.ARouterPath
+import com.xiongch.lib_common.navigator.ARouterPath
 import com.xiongch.lib_common.base.BaseActivity
 import com.xiongch.universal.R
 import com.xiongch.universal.databinding.ActivityMainBinding
