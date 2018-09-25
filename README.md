@@ -1,5 +1,5 @@
 # ModularizationDemo
-Modularization demo developed by MVVM dagger2 RxJava2
+Modularization demo developed by MVVM dagger2 RxJava2 and supported AndroidX
 
 ```
 switch module by change the value of isModule from gradle.properties
