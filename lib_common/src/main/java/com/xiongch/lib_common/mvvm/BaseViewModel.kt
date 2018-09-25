@@ -1,6 +1,6 @@
 package com.xiongch.lib_common.mvvm
 
-import android.arch.lifecycle.*
+import androidx.lifecycle.*
 import com.xiongch.lib_common.extensions.update
 import io.reactivex.disposables.CompositeDisposable
 

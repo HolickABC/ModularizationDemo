@@ -1,13 +1,13 @@
 package com.xiongch.lib_common.extensions
 
 import android.app.Activity
-import android.arch.lifecycle.*
+import androidx.lifecycle.*
 import android.content.Context
 import android.content.res.Resources
 import android.os.Looper
-import android.support.design.widget.Snackbar
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentActivity
+import com.google.android.material.snackbar.Snackbar
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
 import android.view.View
 import android.widget.FrameLayout
 import android.widget.Toast

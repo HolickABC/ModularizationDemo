@@ -1,6 +1,6 @@
 package com.xiongch.lib_common.base
 
-import android.databinding.ViewDataBinding
+import androidx.databinding.ViewDataBinding
 import android.os.Bundle
 
 abstract class LazyFragment<T : ViewDataBinding> : BaseFragment<T>() {

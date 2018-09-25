@@ -1,7 +1,7 @@
 package com.xiongch.girl.di
 
-import android.arch.lifecycle.ViewModel
-import android.arch.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
 import com.xiongch.lib_common.di.ViewModelKey
 import com.xiongch.lib_common.mvvm.ViewModelFactory
 import com.xiongch.girl.ui.GirlActViewModel

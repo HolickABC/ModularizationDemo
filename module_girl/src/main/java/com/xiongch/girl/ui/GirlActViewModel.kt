@@ -1,6 +1,6 @@
 package com.xiongch.girl.ui
 
-import android.arch.lifecycle.MutableLiveData
+import androidx.lifecycle.MutableLiveData
 import com.xiongch.lib_common.api.repository.TestRepository
 import com.xiongch.lib_common.extensions.addTo
 import com.xiongch.lib_common.http.ObserverWrapper

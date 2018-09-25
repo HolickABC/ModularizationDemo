@@ -1,7 +1,6 @@
 package com.xiongch.lib_common.base
 
-import android.databinding.ViewDataBinding
-import android.util.Log
+import androidx.databinding.ViewDataBinding
 import com.xiongch.lib_common.extensions.observe
 import com.xiongch.lib_common.mvvm.BaseViewModel
 
