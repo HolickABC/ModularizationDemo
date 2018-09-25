@@ -40,9 +40,9 @@ android {
 
 dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
-    testApi deps.junit
-    androidTestApi deps.runner
-    androidTestApi deps.espresso
+    testImplementation deps.junit
+    androidTestImplementation deps.runner
+    androidTestImplementation deps.espresso
 
     api deps.kotlin.stdlib
 
