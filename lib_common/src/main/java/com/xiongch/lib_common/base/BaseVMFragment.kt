@@ -12,6 +12,7 @@ abstract class BaseVMFragment<T : ViewDataBinding, VM : BaseViewModel> : LazyFra
         super.onInitPattern()
         mViewModel = getViewModel()
         lifecycle.addObserver(mViewModel)
+        binding.setLifecycleOwner(this)
         registerLiveData()
     }
 

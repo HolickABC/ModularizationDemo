@@ -12,6 +12,7 @@ abstract class BaseVMActivity<T : ViewDataBinding, VM : BaseViewModel> : BaseAct
         super.onInitPattern()
         mViewModel = getViewModel()
         lifecycle.addObserver(mViewModel)
+        binding.setLifecycleOwner(this)
         registerLiveData()
     }
 
