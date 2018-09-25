@@ -14,8 +14,8 @@ class GirlActViewModel @Inject constructor(private val testRepository: TestRepos
     fun test(block: (Boolean) -> Unit) {
         testRepository.test()
                 .subscribeWith(object : ObserverWrapper<Boolean>(this) {
-                    override fun next(t: Boolean) {
-                        super.next(t)
+                    override fun onNext(t: Boolean) {
+                        super.onNext(t)
                         block(t)
                     }
                 }).addTo(mDisposable)
