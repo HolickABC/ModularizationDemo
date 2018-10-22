@@ -29,7 +29,6 @@ open class ObserverWrapper<T> : DisposableObserver<T> {
 
         }
         dismissLoading()
-        error(e)
     }
 
     override fun onComplete() {
