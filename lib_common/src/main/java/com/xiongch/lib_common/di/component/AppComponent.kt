@@ -7,6 +7,7 @@ import com.xiongch.lib_common.di.module.AppModule
 import com.xiongch.lib_common.di.module.NetworkModule
 import com.xiongch.lib_common.api.RepositoryModule
 import com.xiongch.lib_common.api.repository.TestRepository
+import com.xiongch.lib_common.di.module.ViewModelModule
 import dagger.Component
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
@@ -14,7 +15,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
 @Singleton
-@Component(modules = [AppModule::class, NetworkModule::class, RepositoryModule::class])
+@Component(modules = [AppModule::class, NetworkModule::class, RepositoryModule::class, ViewModelModule::class])
 interface AppComponent {
 
     fun getApplication(): Application
