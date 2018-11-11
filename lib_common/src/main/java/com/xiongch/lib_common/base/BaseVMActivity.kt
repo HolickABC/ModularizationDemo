@@ -1,22 +1,28 @@
 package com.xiongch.lib_common.base
 
 import androidx.databinding.ViewDataBinding
+import androidx.lifecycle.ViewModelProviders
 import com.xiongch.lib_common.extensions.observe
 import com.xiongch.lib_common.mvvm.BaseViewModel
+import com.xiongch.lib_common.mvvm.ViewModelFactory
+import javax.inject.Inject
 
 abstract class BaseVMActivity<T : ViewDataBinding, VM : BaseViewModel> : BaseActivity<T>() {
+
+    @Inject
+    lateinit var viewModelFactory: ViewModelFactory
 
     protected lateinit var mViewModel: VM
 
     override fun onInitPattern() {
         super.onInitPattern()
-        mViewModel = getViewModel()
+        mViewModel = ViewModelProviders.of(this, viewModelFactory)[getViewModelClass()]
         lifecycle.addObserver(mViewModel)
         binding.setLifecycleOwner(this)
         registerLiveData()
     }
 
-    protected abstract fun getViewModel(): VM
+    protected abstract fun getViewModelClass(): Class<VM>
 
     private fun registerLiveData() {
         observe(mViewModel.mLoadingVisible) {
